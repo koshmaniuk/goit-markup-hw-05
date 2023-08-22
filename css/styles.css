@@ -323,6 +323,7 @@ input {
   width: 264px;
   height: 40px;
   color: var(--white-background-color);
+  margin-right: 24px;
 }
 
 .subscribe-form {
