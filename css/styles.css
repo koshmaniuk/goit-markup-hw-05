@@ -323,20 +323,30 @@ input {
   width: 264px;
   height: 40px;
   color: var(--white-background-color);
-  margin-right: 24px;
 }
 
-.subscribe-form {
+.subscribe-input::placeholder {
   color: var(--white-background);
 }
 
+.subscribe-form {
+  display: flex;
+  color: var(--white-background);
+  gap: 24px;
+}
+
+.subscribe-label {
+}
+
 .subscribe-btn {
-  display: inline-flex;
+  display: flex;
   padding: 8px 24px;
+  min-width: 165px;
   max-height: 40px;
+  letter-spacing: 0.04em;
   justify-content: center;
   align-items: center;
-  gap: 16px;
+
   border-radius: 4px;
   background-color: var(--primary-brand);
   font-family: var(--primary-font);
@@ -346,6 +356,7 @@ input {
 
 .subscribe-icon {
   fill: var(--white-background);
+  margin-left: 16px;
 }
 
 /* ---------------------------HERO SECTION--------------------------- */
@@ -756,7 +767,7 @@ input {
 .modal-btn:focus .modal-btn-icon {
   fill: var(--white-background);
 }
-
+/* наповнення */
 .modal-form {
   display: flex;
   flex-direction: column;
@@ -795,10 +806,15 @@ input {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-field {
+  /*  */
+  margin-bottom: 8px;
+}
+
 .input-title {
   color: var(--subtle-text);
   font-size: 12px;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   display: block;
   margin-bottom: 4px;
@@ -830,7 +846,7 @@ input {
 
 .modal-title {
   color: var(--dark);
-  align-self: center;
+  text-align: center;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
